@@ -1,4 +1,4 @@
-import womanHeroImg from "../assets/Womanhero.png";
+import womanHeroImg from "../assets/Womanhero.webp";
 import Search from "./Search";
 
 export default function WomenHero({ searchValue = "", onSearch }) {
@@ -19,6 +19,8 @@ export default function WomenHero({ searchValue = "", onSearch }) {
             className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
             src={womanHeroImg}
             alt="Luxury perfume collection for women"
+            loading="eager"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
         </div>

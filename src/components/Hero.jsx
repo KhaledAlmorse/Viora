@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Icon from "./Icon";
-import heroImg from "../assets/hero.png";
+import heroImg from "../assets/hero.webp";
 
 export default function Hero() {
   return (
@@ -10,6 +10,8 @@ export default function Hero() {
           src={heroImg}
           alt="Luxurious perfume bottle with white roses"
           className="w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-l from-transparent via-surface/40 to-surface" />
       </div>

@@ -59,6 +59,7 @@ export default function WomenProductCard({ product }) {
           className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
           src={image}
           alt={name}
+          loading="lazy"
         />
         {displayTag && (
           <div className="absolute top-4 right-4 flex flex-col gap-2">

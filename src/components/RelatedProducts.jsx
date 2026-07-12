@@ -32,6 +32,7 @@ export default function RelatedProducts({ slugs }) {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 src={p.image}
                 alt={p.name}
+                loading="lazy"
               />
             </div>
             <div className="p-6 text-center">

@@ -37,6 +37,7 @@ export default function MenProductCard({ product }) {
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           src={image}
           alt={name}
+          loading="lazy"
         />
         {displayBadge && (
           <div className="absolute top-4 right-4 flex flex-col gap-2">

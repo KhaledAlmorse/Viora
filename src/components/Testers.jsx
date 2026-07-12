@@ -1,7 +1,7 @@
 import Icon from "./Icon";
-import testerSet from "../assets/testers/tester-set-3x3ml.jpeg";
-import tester5ml from "../assets/testers/tester-5ml.jpeg";
-import tester10ml from "../assets/testers/tester-10ml.jpeg";
+import testerSet from "../assets/testers/tester-set-3x3ml.webp";
+import tester5ml from "../assets/testers/tester-5ml.webp";
+import tester10ml from "../assets/testers/tester-10ml.webp";
 
 const testerProducts = [
   {
@@ -48,6 +48,7 @@ export default function Testers() {
                 <img
                   src={tester.image}
                   alt={tester.name}
+                  loading="lazy"
                   className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute top-4 right-4 bg-primary text-white text-[10px] px-3 py-1 font-bold rounded-full">

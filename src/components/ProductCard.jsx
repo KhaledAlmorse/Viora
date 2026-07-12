@@ -20,9 +20,11 @@ export default function ProductCard({ product, badge }) {
       className="group flex flex-col h-full cursor-pointer"
     >
       <div className="relative aspect-square h-64 overflow-hidden bg-surface-container mb-6 rounded-lg luxury-shadow">
-        <div
-          className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-          style={{ backgroundImage: `url("${image}")` }}
+        <img
+          src={image}
+          alt={name}
+          loading="lazy"
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         {badge && (
           <div className="absolute top-4 right-4 bg-primary text-white text-[10px] px-3 py-1 font-bold rounded-full">
